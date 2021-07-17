@@ -28,5 +28,5 @@ function nav(){
         bar.style.width = '60px';
         full.className = 'full bx bx-fullscreen';
     }  
- }
- 
+ };
+
