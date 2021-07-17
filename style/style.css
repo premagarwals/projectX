@@ -150,32 +150,51 @@ body{
 }
 .nav-bar ul li{
   position: relative;
-  margin: 20px 2px;
-}
-.nav-bar ul .bar-item::after{
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: -10px;
-  right: -100%;
-  bottom: -10px;
-  left: 200%;
-  background-color: #117864;
+  margin: 10px 2px;
+  width: 250px;
+  padding: 10px;
   border-radius: 10px 0 0 10px;
-  transition: 0.5s;
 }
-.nav-bar ul .bar-item:hover::after{
-  left: -15px;
+.nav-bar ul li:hover{
+  background-color: #f2f3f4;
 }
-.nav-bar ul li:hover a{
-  color: #fff;
+.nav-bar ul li.active{
+  background-color: #117864;
 }
+.nav-bar ul li.active::after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: 42px;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 8px 8px 0px #117864;
+}
+.nav-bar ul li.active::before{
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: 42px;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 8px -8px 0px #117864;
+}
+
+
+
 .nav-bar ul li a{
   text-decoration: none;
   color: #117864;
   font-size: 20px;
   display: flex;
   transition: 0.5s;
+}
+.nav-bar ul .bar-item.active a{
+  color: #fff;
 }
 .nav-bar ul li a i{
   margin-right: 30px;
