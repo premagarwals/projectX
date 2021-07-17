@@ -165,7 +165,7 @@ body{
   content: '';
   position: absolute;
   top: -15px;
-  right: 42px;
+  right: 32px;
   height: 15px;
   width: 15px;
   background-color: #fff;
@@ -176,7 +176,7 @@ body{
   content: '';
   position: absolute;
   bottom: -15px;
-  right: 42px;
+  right: 32px;
   height: 15px;
   width: 15px;
   background-color: #fff;
