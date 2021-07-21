@@ -9,18 +9,19 @@
         <meta name="viewport" content="width=device-width, intial-scale = 1.0">  </meta>
         <script src="script/script.js">  </script>
     </head>
-    <body>
+    <body id='bod' style='margin-left: 0px;margin-right: 60px;'>
         <div onclick="nav()" id='nav-btn' class="nav-btn"><i class="btn bx bx-menu"></i></div>
-        <div id='nav-bar' class='nav-bar'>
+        <div id='nav-bar' class='nav-bar' style="width: 0px;">
             <div onclick="full()"><i class='full bx bx-fullscreen'></i></div>
-            <ul>
+            <ul onclick="myFunction(event)">
                 <li class="bar-item active"><a href="#"> <i class="bx bx-home"></i> Home</a></li>
                 <li class="bar-item"><a href="#"> <i class="bx bx-user"></i> About</a></li>
                 <li class="bar-item"><a href="#"> <i class="bx bx-comment-detail"></i> Contact</a></li>
                 <li class="bar-item"><a href="#"> <i class="bx bx-trophy"></i> Achievements</a></li>
                 <li class="bar-item"><a href="#"> <i class="bx bx-map"></i> Map</a></li>
             </ul>
-        </div>
+    </div>
+        <div class="main">
         <div id="cover_img">  </div>
         <div class='top'>  
             <div id='centers'>  
@@ -78,5 +79,6 @@
                 <button>Submit</button>
             </form>
         </div>
+    </div>
     </body> 
 </html>
